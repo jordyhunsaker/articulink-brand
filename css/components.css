@@ -1,0 +1,143 @@
+/* Articulink CSS-only components: buttons, form inputs, and card depth.
+ * Framework-free, for use anywhere HTML renders (server-rendered pages,
+ * emails, static sites). Requires tokens.css to be loaded first.
+ */
+
+/* ── Buttons ───────────────────────────────────────────────── */
+
+.btn-primary,
+.btn-secondary,
+.btn-accent,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: var(--cloud);
+  background: var(--tide);
+  border: none;
+  border-bottom: 4px solid var(--tide-deep);
+}
+
+.btn-primary:hover {
+  background: var(--surf);
+  border-bottom-color: var(--tide);
+}
+
+.btn-secondary {
+  color: var(--tide);
+  background: var(--cloud);
+  border: 2px solid var(--mist);
+  border-bottom: 4px solid var(--mist);
+}
+
+.btn-accent {
+  color: var(--abyss);
+  background: var(--sunshine);
+  border: none;
+  border-bottom: 4px solid var(--sunshine-deep);
+}
+
+.btn-accent:hover {
+  filter: brightness(1.05);
+}
+
+.btn-ghost {
+  color: var(--tide);
+  background: transparent;
+  border: 2px solid var(--mist);
+  border-bottom: 4px solid var(--mist);
+}
+
+.btn-secondary:hover,
+.btn-ghost:hover {
+  background: var(--breeze);
+  border-color: var(--bubble);
+  border-bottom-color: var(--bubble);
+}
+
+.btn-primary:active,
+.btn-secondary:active,
+.btn-accent:active,
+.btn-ghost:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+  padding-bottom: calc(0.75rem + 2px);
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  border-bottom-width: 3px;
+  border-radius: 0.75rem;
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border-bottom-width: 5px;
+  border-radius: 1rem;
+}
+
+/* 3D press effect for custom buttons */
+.btn-3d {
+  transition: all 0.1s ease;
+}
+
+.btn-3d:active {
+  transform: translateY(2px);
+  border-bottom-width: 0;
+}
+
+/* ── Form inputs ───────────────────────────────────────────── */
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--abyss);
+  background: var(--cloud);
+  border: 2px solid var(--mist);
+  border-radius: 0.75rem;
+  transition: all 0.15s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--tide);
+  box-shadow: 0 0 0 3px rgba(3, 125, 228, 0.12);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ── Card depth effects ────────────────────────────────────── */
+
+.card-depth {
+  box-shadow:
+    0 1px 2px rgba(1, 42, 77, 0.04),
+    0 4px 8px rgba(1, 42, 77, 0.06),
+    0 8px 16px rgba(1, 42, 77, 0.04);
+}
+
+.card-depth-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 4px 8px rgba(1, 42, 77, 0.08),
+    0 12px 24px rgba(1, 42, 77, 0.12),
+    0 24px 48px rgba(1, 42, 77, 0.08);
+}

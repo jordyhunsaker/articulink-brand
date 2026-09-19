@@ -1,0 +1,12 @@
+/* Articulink brand styles: everything except the Tailwind theme mapping.
+ *
+ *   @import "@articulink/brand/css/index.css";
+ *
+ * Tailwind v4 apps should additionally import css/tailwind.css.
+ * The `.dark` class on <html> or <body> switches to dark mode.
+ */
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./components.css";
+@import "./animations.css";

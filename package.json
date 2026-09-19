@@ -1,0 +1,51 @@
+{
+  "name": "@articulink/brand",
+  "version": "1.0.0",
+  "description": "Articulink brand guidelines as code: design tokens, CSS, and logo assets for internal Articulink projects.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordyhunsaker/articulink-brand.git"
+  },
+  "homepage": "https://github.com/jordyhunsaker/articulink-brand#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "main": "./js/index.cjs",
+  "module": "./js/index.mjs",
+  "types": "./js/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.mjs",
+      "require": "./js/index.cjs"
+    },
+    "./tokens": {
+      "style": "./css/tokens.css",
+      "default": "./css/tokens.css"
+    },
+    "./tokens.json": "./tokens/tokens.json",
+    "./css/*": "./css/*",
+    "./assets/*": "./assets/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "tokens",
+    "css",
+    "js",
+    "assets"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test test/*.mjs",
+    "prepublishOnly": "npm run check && npm test"
+  }
+}

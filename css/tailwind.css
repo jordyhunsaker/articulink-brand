@@ -1,0 +1,82 @@
+/* GENERATED FILE - do not edit by hand.
+ * Source of truth: tokens/tokens.json. Regenerate with `npm run build`.
+ */
+
+/* Tailwind v4 theme mapping. Import AFTER tokens.css:
+ *
+ *   @import "@articulink/brand/css/tokens.css";
+ *   @import "@articulink/brand/css/tailwind.css";
+ *
+ * Exposes every token as a Tailwind color (bg-tide, text-abyss, border-mist, ...)
+ * and the brand font families (font-sans, font-display, font-handwrite).
+ */
+
+@theme inline {
+  /* Core Brand Colors */
+  --color-tide: var(--tide);
+  --color-surf: var(--surf);
+  --color-abyss: var(--abyss);
+  --color-cloud: var(--cloud);
+
+  /* Blue Scale (Ocean Journey) */
+  --color-breeze: var(--breeze);
+  --color-mist: var(--mist);
+  --color-bubble: var(--bubble);
+  --color-lagoon: var(--lagoon);
+  --color-depths: var(--depths);
+  --color-trench: var(--trench);
+
+  /* Secondary Accent Colors */
+  --color-sunshine: var(--sunshine);
+  --color-coral: var(--coral);
+  --color-sunset: var(--sunset);
+  --color-jellyfish: var(--jellyfish);
+  --color-kelp: var(--kelp);
+  --color-seafoam: var(--seafoam);
+
+  /* Pressed/Deep State Colors */
+  --color-tide-deep: var(--tide-deep);
+  --color-sunshine-deep: var(--sunshine-deep);
+  --color-mist-deep: var(--mist-deep);
+
+  /* UI Feedback Colors */
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  /* Status Badge Backgrounds */
+  --color-info-bg: var(--info-bg);
+  --color-success-bg: var(--success-bg);
+  --color-warning-bg: var(--warning-bg);
+  --color-error-bg: var(--error-bg);
+
+  /* Status Badge Text */
+  --color-info-text: var(--info-text);
+  --color-success-text: var(--success-text);
+  --color-warning-text: var(--warning-text);
+  --color-error-text: var(--error-text);
+
+  /* Semantic Aliases */
+  --color-primary: var(--primary);
+  --color-primary-deep: var(--primary-deep);
+  --color-secondary: var(--secondary);
+  --color-secondary-deep: var(--secondary-deep);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+
+  /* Legacy aliases (kept for gradual migration; prefer the token names) */
+  --color-brand-blue: var(--surf);
+  --color-brand-yellow: var(--sunshine);
+  --color-brand-navy: var(--abyss);
+  --color-brand-light: var(--mist);
+  --color-bg-card: var(--cloud);
+
+  /* Typography (font CSS vars are injected by the app, e.g. next/font) */
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-nunito);
+  --font-handwrite: var(--font-caveat);
+}

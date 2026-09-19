@@ -1,0 +1,80 @@
+/* GENERATED FILE - do not edit by hand.
+ * Source of truth: tokens/tokens.json. Regenerate with `npm run build`.
+ */
+
+:root {
+  /* Core Brand Colors */
+  --tide: #037DE4;
+  --surf: #1E96FC;
+  --abyss: #012A4D;
+  --cloud: #FFFFFF;
+
+  /* Blue Scale (Ocean Journey) */
+  --breeze: #F7FBFF;
+  --mist: #E4F2FE;
+  --bubble: #AFD9FD;
+  --lagoon: #013F74;
+  --depths: #01355E;
+  --trench: #001C33;
+
+  /* Secondary Accent Colors */
+  --sunshine: #FCDE1E;
+  --coral: #FC1E96;
+  --sunset: #FC6F1E;
+  --jellyfish: #C11EFC;
+  --kelp: #96FC1E;
+  --seafoam: #1EFCC8;
+
+  /* Pressed/Deep State Colors */
+  --tide-deep: #0369C1;
+  --sunshine-deep: #D4A90E;
+  --mist-deep: #C9DFF5;
+
+  /* UI Feedback Colors */
+  --info: #3B82F6;
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+
+  /* Status Badge Backgrounds */
+  --info-bg: #EFF6FF;
+  --success-bg: #F0FDF4;
+  --warning-bg: #FFFBEB;
+  --error-bg: #FEF2F2;
+
+  /* Status Badge Text */
+  --info-text: #1D4ED8;
+  --success-text: #15803D;
+  --warning-text: #B45309;
+  --error-text: #B91C1C;
+
+  /* Semantic Aliases */
+  --primary: var(--tide);
+  --primary-deep: var(--tide-deep);
+  --secondary: var(--sunshine);
+  --secondary-deep: var(--sunshine-deep);
+  --background: var(--cloud);
+  --foreground: var(--abyss);
+  --text-secondary: var(--lagoon);
+  --text-muted: #5A7FA0;
+  --border: var(--mist);
+
+  /* Motion */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Dark mode: Overrides applied under the `.dark` class. Page background becomes Abyss, text becomes Breeze; Mist and Breeze remap to their dark equivalents so borders and secondary surfaces keep working. */
+.dark {
+  --background: var(--abyss);
+  --foreground: var(--breeze);
+  --mist: var(--lagoon);
+  --breeze: var(--depths);
+}
