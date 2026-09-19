@@ -5,9 +5,9 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordyhunsaker/articulink-brand.git"
+    "url": "git+https://github.com/Articulink/brand.git"
   },
-  "homepage": "https://github.com/jordyhunsaker/articulink-brand#readme",
+  "homepage": "https://github.com/Articulink/brand#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },

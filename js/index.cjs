@@ -4,7 +4,7 @@ const tokens = {
     "name": "Articulink",
     "description": "Articulink brand design tokens. This file is the single source of truth: edit it, then run `npm run build` to regenerate css/tokens.css, css/tailwind.css, and js/.",
     "website": "https://articulink.com",
-    "guide": "https://github.com/jordyhunsaker/articulink-brand-guide"
+    "guide": "https://github.com/Articulink/brand/tree/main/guide"
   },
   "color": {
     "core": {

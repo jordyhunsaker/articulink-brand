@@ -4,10 +4,12 @@ Articulink's brand guidelines as code: design tokens, ready-to-use CSS, and
 logo assets, published to GitHub Packages so every internal Articulink
 project consumes the same source of truth.
 
-The human-readable guidelines live in
-[articulink-brand-guide](https://github.com/jordyhunsaker/articulink-brand-guide).
-The full brand-guide website is
-[Articulink/brand](https://github.com/Articulink/brand) (design.articulink.com).
+Everything about the brand lives in this repository: the human-readable
+guidelines are in [`guide/`](guide/), and the interactive brand-guide
+website ([design.articulink.com](https://design.articulink.com)) is the
+Next.js app in [`site/`](site/). The React component library is the
+separate [`@articulink/design-system`](https://github.com/Articulink/design-system)
+package.
 
 ## What's inside
 
@@ -22,6 +24,8 @@ The full brand-guide website is
 | `css/index.css` | Imports all of the above |
 | `js/` | Typed JS exports: `colors`, `fonts`, `typeScale`, `breakpoints`, `motion`, … |
 | `assets/` | Logo SVGs (Tide, white, Abyss) and favicon — **outlined paths**, no font loading needed |
+| `guide/` | Written guidelines: color, typography, logo, voice, foundations, components (not part of the npm package) |
+| `site/` | The interactive brand guide (Next.js), deployed at design.articulink.com (not part of the npm package) |
 
 ## Installing
 
